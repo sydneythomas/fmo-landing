@@ -15,6 +15,7 @@ export default function Hero() {
         <button
           className="outline blue"
           onClick={() => alert("go to sign up form")}
+          style={{ margin: "2rem auto" }}
         >
           Sign up for more info
         </button>

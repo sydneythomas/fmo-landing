@@ -10,6 +10,7 @@
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
+    max-height: unset;
   }
 
   .hero-logo {
@@ -36,17 +37,10 @@
   }
 
   .hero-content {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2rem;
-
-    // @media (max-width: 800px) {
-    //   position: absolute;
-    //   display: block;
-    //   top: 0;
-    // }
 
     h1 {
       font-size: 60px;
