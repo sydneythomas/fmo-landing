@@ -9,32 +9,32 @@ import Drink from "../../assets/cocktail.jpeg";
 export default function Features() {
   const features = [
     {
-      title: "title A",
+      title: "Trained Barbers",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
       img: Barber,
     },
     {
-      title: "title A",
+      title: "Nail Grooming",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
       img: Nails,
     },
     {
-      title: "title A",
+      title: "Soothing Facials",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
       img: Skin,
     },
     {
-      title: "title A",
+      title: "The Den",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
       img: Lounge,
     },
     {
-      title: "title A",
+      title: "Fine Cigars",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
       img: Cigar,
     },
     {
-      title: "title A",
+      title: "Bespoke Cocktails",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
       img: Drink,
     },

@@ -6,32 +6,47 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   max-height: 100vh;
+  position: relative;
 
   @media (max-width: 800px) {
-    // grid-template-columns: 1fr;
-    // grid-template-rows: repeat(2, 1fr);
-    display: flex;
-    position: relative;
-    align-items: flex-end;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo {
+    position: absolute;
+    width: 7rem;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+
+    @media (max-width: 800px) {
+      margin: 1rem;
+      width: 5rem;
+    }
   }
 
   .hero-image {
     width: 100%;
     max-height: 100vh;
-    object-fit: contain;
+    object-fit: cover;
+
+    @media (max-width: 800px) {
+      max-height: 50vh;
+    }
   }
 
   .hero-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5rem;
+    margin: 2rem;
 
-    @media (max-width: 800px) {
-      position: absolute;
-      display: block;
-      top: 0;
-    }
+    // @media (max-width: 800px) {
+    //   position: absolute;
+    //   display: block;
+    //   top: 0;
+    // }
 
     h1 {
       font-size: 60px;

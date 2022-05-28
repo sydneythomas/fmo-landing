@@ -11,7 +11,7 @@ function App() {
       <p className="lora subtitle">
         We see that you work hard, King <br /> & you deserve to be rewarded.
       </p>
-      <p style={{ fontSize: "25px" }}>
+      <p style={{ fontSize: "20px" }}>
         At FMO, our goal is to address all your self-care needs in a space
         designed by you and for you. <br />
         <br />
