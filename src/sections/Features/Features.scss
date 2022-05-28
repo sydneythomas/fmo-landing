@@ -1,0 +1,31 @@
+@import "../../styles/main";
+
+.feature-grid {
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  //   grid-template-rows: 1fr;
+  gap: 3rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-card {
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .accent {
+    background: $background-gold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}

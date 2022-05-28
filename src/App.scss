@@ -1,0 +1,137 @@
+@import "./styles/_main.scss";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+.rye {
+  font-family: "Rye", cursive;
+  line-height: 5rem;
+  text-align: center;
+  letter-spacing: 5px;
+  background: linear-gradient(
+    90deg,
+    #927415 -2.03%,
+    #e2b72b 52.17%,
+    #b5952d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3,
+h4,
+.lora {
+  font-family: "Lora", serif;
+}
+
+// Font Sizes
+.title {
+  font-size: 60px;
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
+}
+
+.subtitle {
+  font-size: 50px;
+  @media (max-width: 500px) {
+    font-size: 35px;
+  }
+}
+
+.header {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+button {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: none;
+
+  &.solid {
+    background: $background-gold;
+  }
+
+  &.outline {
+    border: solid 3px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #927415, #e2b72b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    color: #e2b72b;
+
+    &.white {
+      box-shadow: 2px 1000px 1px #f5f5f0 inset;
+    }
+
+    &.blue {
+      box-shadow: 2px 1000px 1px #1a1b42 inset;
+    }
+  }
+}
+
+.content-container {
+  margin: 5rem 3rem;
+
+  @media (max-width: 500px) {
+    margin: 3rem 1rem;
+  }
+}
