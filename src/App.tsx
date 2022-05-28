@@ -15,9 +15,8 @@ function App() {
         At FMO, our goal is to address all your self-care needs in a space
         designed by you and for you. <br />
         <br />
-        Our exclusive membership includes access to our impeccable grooming
-        services, delicious bespoke cocktails, & time to unwind with a cigar in
-        our lounge*.
+        At FMO we pamper hardworking men with our fine grooming services… Our
+        goal is for all Men to WALK IN AS A MAN, WALK OUT AS A KING!!
       </p>
       <p style={{ fontStyle: "italic" }}>
         *Membership model & louge location lauching Fall ‘22

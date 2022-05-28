@@ -17,7 +17,7 @@ export default function Hero() {
           onClick={() => alert("go to sign up form")}
           style={{ margin: "2rem auto" }}
         >
-          Sign up for more info
+          BECOME A MEMBER
         </button>
       </div>
     </div>

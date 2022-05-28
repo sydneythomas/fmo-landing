@@ -3,21 +3,16 @@ import "./Footer.scss";
 export default function Footer() {
   const locations = [
     {
-      name: "FMO Salon & Den",
-      address: "place A",
-      city: "atl",
-      state: "Georgia",
-      zip: "55555",
+      name: "FMO Sandy Springs",
+      address: "5801 Roswell Rd, Ste A",
+      city: "Sandy Springs",
+      state: "GA",
+      zip: "30328",
       phone: "555 - 555 - 5555",
-      isNew: true,
     },
     {
-      name: "FMO Salon",
-      address: "place A",
-      city: "atl",
-      state: "Georgia",
-      zip: "55555",
-      phone: "555 - 555 - 5555",
+      name: "FMO & The Den",
+      isNew: true,
     },
   ];
 
@@ -28,18 +23,21 @@ export default function Footer() {
           return (
             <div key={index} className="footer-location">
               <p>
-                {location.isNew && <span>COMING SOON: </span>} {location.name}
+                {location.isNew && <span>COMING FALL '22: </span>}{" "}
+                {location.name}
               </p>
               <p>{location.address}</p>
-              <p>
-                {location.city}, {location.state} {location.zip}
-              </p>
-              <p>📞 {location.phone}</p>
+              {location.city && (
+                <p>
+                  {location.city}, {location.state} {location.zip}
+                </p>
+              )}
+              {location.phone && <p>📞 {location.phone}</p>}
             </div>
           );
         })}
       </div>
-      <p>info@fmo.com</p>
+      <a href="mailto:Sales@fmogrooming.com">Email us!</a>
     </div>
   );
 }
