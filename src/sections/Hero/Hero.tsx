@@ -5,9 +5,9 @@ import Logo from "../../assets/logo.png";
 export default function Hero() {
   return (
     <div className="hero-grid">
-      <img className="hero-logo" src={Logo} />
       <img className="hero-image" src={ManAtBar} />
       <div className="hero-content">
+        <img className="hero-logo" src={Logo} />
         <p className="lora title gold">Fine Grooming Den for Men</p>
         <p className="lora subtext white">
           Because you deserve to look, feel, & be treated like a king
