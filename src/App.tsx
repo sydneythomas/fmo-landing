@@ -12,21 +12,19 @@ function App() {
         We see that you work hard, King <br /> & you deserve to be rewarded.
       </p>
       <p style={{ fontSize: "20px" }}>
-        At FMO, our goal is to address all your self-care needs in a space
-        designed by you and for you. <br />
+        At FMO we pamper hardworking men with our fine grooming services. <br />
         <br />
-        At FMO we pamper hardworking men with our fine grooming services… Our
-        goal is for all Men to WALK IN AS A MAN, WALK OUT AS A KING!!
+        Our goal is for all Men to WALK IN AS A MAN, WALK OUT AS A KING!
       </p>
-      <p style={{ fontStyle: "italic" }}>
+      {/* <p style={{ fontStyle: "italic" }}>
         *Membership model & louge location lauching Fall ‘22
-      </p>
+      </p> */}
     </div>
   );
 
   const Cta = () => (
     <div className="cta-container" style={{ margin: "5rem auto" }}>
-      <p className="lora title">Interested in becoming a member?</p>
+      <p className="lora subtitle">Interested in becoming a member?</p>
       <button
         className="header outline white"
         onClick={() => alert("go to sign up form")}

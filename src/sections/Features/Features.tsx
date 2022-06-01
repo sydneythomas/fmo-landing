@@ -10,32 +10,32 @@ export default function Features() {
   const features = [
     {
       title: "Trained Barbers",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
+      text: "Allow our professionally trained barbers to trim & sculpt your mane to perfection. We offer razor shaves, shaping, and a variety of other techniques for all hair types.",
       img: Barber,
     },
     {
       title: "Nail Grooming",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
+      text: "You're on your feet all day, King. Let us help you relax & unwind with our premium manicure & pedicure treatments. ",
       img: Nails,
     },
     {
       title: "Soothing Facials",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
+      text: "Pamper your skin with a luxorius hot towel facial. Lay back, relax, & allow the steam to rejuvenate your pores.",
       img: Skin,
     },
     {
       title: "The Den",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
+      text: "Coming soon to our north Atlanta location, The Den is a perfect place to network or wind down while enjoying one of our topshelf cocktails, cigars, & live music.",
       img: Lounge,
     },
     {
       title: "Fine Cigars",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
+      text: "Browse our selection of cigars or enjoy one of your own in our private lounge.",
       img: Cigar,
     },
     {
       title: "Bespoke Cocktails",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non t aliquam",
+      text: "Every gentleman will receive a complimentary beverage with each grooming service. We offer a selection of premium, expertly-crafted cocktails.",
       img: Drink,
     },
   ];

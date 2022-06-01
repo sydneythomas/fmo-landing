@@ -10,7 +10,7 @@ export default function Hero() {
         <img className="hero-logo" src={Logo} />
         <span className="lora title gold">Fine Grooming Den for Men</span>
         <span className="lora subtext white">
-          Because you deserve to look, feel, & be treated like a king
+          Because you deserve to look, feel, & be treated like a King
         </span>
         <button
           className="outline blue"
