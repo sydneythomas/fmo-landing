@@ -5,6 +5,9 @@ import Skin from "../../assets/face-roller.jpeg";
 import Lounge from "../../assets/lounge.jpeg";
 import Cigar from "../../assets/cutting cigar.jpeg";
 import Drink from "../../assets/cocktail.jpeg";
+import Towel from "../../assets/hottowel.jpeg";
+import Lounge2 from "../../assets/cigar lounge.jpeg";
+import Feet from "../../assets/feet.jpeg";
 
 export default function Features() {
   const features = [
@@ -16,17 +19,17 @@ export default function Features() {
     {
       title: "Nail Grooming",
       text: "You're on your feet all day, King. Let us help you relax & unwind with our premium manicure & pedicure treatments. ",
-      img: Nails,
+      img: Feet,
     },
     {
       title: "Soothing Facials",
       text: "Pamper your skin with a luxorius hot towel facial. Lay back, relax, & allow the steam to rejuvenate your pores.",
-      img: Skin,
+      img: Towel,
     },
     {
       title: "The Den",
       text: "Coming soon to our north Atlanta location, The Den is a perfect place to network or wind down while enjoying one of our topshelf cocktails, cigars, & live music.",
-      img: Lounge,
+      img: Lounge2,
     },
     {
       title: "Fine Cigars",

@@ -26,7 +26,8 @@ function App() {
     <div className="cta-container" style={{ margin: "5rem auto" }}>
       <p className="lora subtitle">Interested in becoming a member?</p>
       <button
-        className="header outline white"
+        // className="header outline white"
+        className="header solid"
         onClick={() => alert("go to sign up form")}
       >
         sign up here

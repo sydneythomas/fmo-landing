@@ -1,6 +1,27 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Footer.scss";
+import {
+  faFacebook,
+  faLinkedin,
+  faGoogle,
+  faYelp,
+  faTiktok,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default function Footer() {
+  const facebookIcon = faFacebook as IconProp;
+  const linkedInIcon = faLinkedin as IconProp;
+  const googleIcon = faGoogle as IconProp;
+  const tiktokIcon = faTiktok as IconProp;
+  const yelpIcon = faYelp as IconProp;
+  const instagramIcon = faInstagram as IconProp;
+  const emailIcon = faEnvelope as IconProp;
+
   const locations = [
     {
       name: "FMO Sandy Springs",
@@ -15,6 +36,16 @@ export default function Footer() {
       isNew: true,
     },
   ];
+
+  const socials = {
+    facebook: "",
+    linkedIn: "",
+    google: "",
+    tiktok: "",
+    yelp: "",
+    instagram: "",
+    email: "Sales@fmogrooming.com",
+  };
 
   return (
     <div className="footer-container">
@@ -37,7 +68,32 @@ export default function Footer() {
           );
         })}
       </div>
-      <a href="mailto:Sales@fmogrooming.com">Email us!</a>
+
+      <div className="footer-socials">
+        {socials.email && (
+          <a href="mailto:Sales@fmogrooming.com">
+            <FontAwesomeIcon className="footer-social" icon={emailIcon} />
+          </a>
+        )}
+        {!socials.facebook && (
+          <FontAwesomeIcon className="footer-social" icon={facebookIcon} />
+        )}
+        {socials.instagram && (
+          <FontAwesomeIcon className="footer-social" icon={instagramIcon} />
+        )}
+        {socials.tiktok && (
+          <FontAwesomeIcon className="footer-social" icon={tiktokIcon} />
+        )}
+        {socials.linkedIn && (
+          <FontAwesomeIcon className="footer-social" icon={linkedInIcon} />
+        )}
+        {socials.yelp && (
+          <FontAwesomeIcon className="footer-social" icon={yelpIcon} />
+        )}
+        {socials.google && (
+          <FontAwesomeIcon className="footer-social" icon={googleIcon} />
+        )}
+      </div>
     </div>
   );
 }

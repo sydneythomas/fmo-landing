@@ -137,6 +137,10 @@ button {
 
   &.solid {
     background: $background-gold;
+
+    &:hover {
+      font-weight: 500;
+    }
   }
 
   &.outline {
