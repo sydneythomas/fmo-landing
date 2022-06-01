@@ -9,7 +9,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
@@ -21,6 +21,7 @@ export default function Footer() {
   const yelpIcon = faYelp as IconProp;
   const instagramIcon = faInstagram as IconProp;
   const emailIcon = faEnvelope as IconProp;
+  const phoneIcon = faPhone as IconProp;
 
   const locations = [
     {
@@ -63,7 +64,15 @@ export default function Footer() {
                   {location.city}, {location.state} {location.zip}
                 </span>
               )}
-              {location.phone && <span>📞 {location.phone}</span>}
+              {location.phone && (
+                <span>
+                  <FontAwesomeIcon
+                    icon={phoneIcon}
+                    style={{ marginRight: "0.5rem" }}
+                  />
+                  {location.phone}
+                </span>
+              )}
             </div>
           );
         })}
