@@ -23,7 +23,7 @@ export default function Features() {
     },
     {
       title: "Soothing Facials",
-      text: "Pamper your skin with a luxorius hot towel facial. Lay back, relax, & allow the steam to rejuvenate your pores.",
+      text: "Pamper your skin with a luxurious hot towel facial. Lay back, relax, & allow the steam to rejuvenate your pores.",
       img: Towel,
     },
     {

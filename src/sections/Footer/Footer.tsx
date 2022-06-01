@@ -43,7 +43,7 @@ export default function Footer() {
     google: "",
     tiktok: "",
     yelp: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/fmofinegrooming/",
     email: "Sales@fmogrooming.com",
   };
 
@@ -71,15 +71,17 @@ export default function Footer() {
 
       <div className="footer-socials">
         {socials.email && (
-          <a href="mailto:Sales@fmogrooming.com">
+          <a href={socials.email}>
             <FontAwesomeIcon className="footer-social" icon={emailIcon} />
           </a>
         )}
-        {!socials.facebook && (
+        {socials.facebook && (
           <FontAwesomeIcon className="footer-social" icon={facebookIcon} />
         )}
         {socials.instagram && (
-          <FontAwesomeIcon className="footer-social" icon={instagramIcon} />
+          <a href={socials.instagram} target="_blank">
+            <FontAwesomeIcon className="footer-social" icon={instagramIcon} />
+          </a>
         )}
         {socials.tiktok && (
           <FontAwesomeIcon className="footer-social" icon={tiktokIcon} />
