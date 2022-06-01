@@ -3,20 +3,23 @@ import "./Footer.scss";
 import {
   faFacebook,
   faLinkedin,
-  faGoogle,
   faYelp,
   faTiktok,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPhone,
+  faMapLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default function Footer() {
   const facebookIcon = faFacebook as IconProp;
   const linkedInIcon = faLinkedin as IconProp;
-  const googleIcon = faGoogle as IconProp;
+  const googleIcon = faMapLocationDot as IconProp;
   const tiktokIcon = faTiktok as IconProp;
   const yelpIcon = faYelp as IconProp;
   const instagramIcon = faInstagram as IconProp;
@@ -39,11 +42,11 @@ export default function Footer() {
   ];
 
   const socials = {
-    facebook: "",
+    facebook: "https://www.facebook.com/fmofinegrooming/",
     linkedIn: "",
-    google: "",
+    google: "https://g.page/fmofinegrooming?share",
     tiktok: "",
-    yelp: "",
+    yelp: "https://www.yelp.com/biz/fmo-a-fine-grooming-den-for-men-sandy-springs-3",
     instagram: "https://www.instagram.com/fmofinegrooming/",
     email: "Sales@fmogrooming.com",
   };
@@ -85,7 +88,9 @@ export default function Footer() {
           </a>
         )}
         {socials.facebook && (
-          <FontAwesomeIcon className="footer-social" icon={facebookIcon} />
+          <a href={socials.facebook} target="_blank">
+            <FontAwesomeIcon className="footer-social" icon={facebookIcon} />
+          </a>
         )}
         {socials.instagram && (
           <a href={socials.instagram} target="_blank">
@@ -93,16 +98,24 @@ export default function Footer() {
           </a>
         )}
         {socials.tiktok && (
-          <FontAwesomeIcon className="footer-social" icon={tiktokIcon} />
+          <a href={socials.tiktok} target="_blank">
+            <FontAwesomeIcon className="footer-social" icon={tiktokIcon} />
+          </a>
         )}
         {socials.linkedIn && (
-          <FontAwesomeIcon className="footer-social" icon={linkedInIcon} />
+          <a href={socials.linkedIn} target="_blank">
+            <FontAwesomeIcon className="footer-social" icon={linkedInIcon} />
+          </a>
         )}
         {socials.yelp && (
-          <FontAwesomeIcon className="footer-social" icon={yelpIcon} />
+          <a href={socials.yelp} target="_blank">
+            <FontAwesomeIcon className="footer-social" icon={yelpIcon} />
+          </a>
         )}
         {socials.google && (
-          <FontAwesomeIcon className="footer-social" icon={googleIcon} />
+          <a href={socials.google} target="_blank">
+            <FontAwesomeIcon className="footer-social" icon={googleIcon} />
+          </a>
         )}
       </div>
     </div>
