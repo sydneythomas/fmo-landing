@@ -8,10 +8,10 @@ export default function Hero() {
       <img className="hero-image" src={ManAtBar} />
       <div className="hero-content">
         <img className="hero-logo" src={Logo} />
-        <p className="lora title gold">Fine Grooming Den for Men</p>
-        <p className="lora subtext white">
+        <span className="lora title gold">Fine Grooming Den for Men</span>
+        <span className="lora subtext white">
           Because you deserve to look, feel, & be treated like a king
-        </p>
+        </span>
         <button
           className="outline blue"
           onClick={() => alert("go to sign up form")}

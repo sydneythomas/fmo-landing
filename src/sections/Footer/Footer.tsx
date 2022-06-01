@@ -22,17 +22,17 @@ export default function Footer() {
         {locations.map((location, index) => {
           return (
             <div key={index} className="footer-location">
-              <p>
+              <span>
                 {location.isNew && <span>COMING FALL '22: </span>}{" "}
                 {location.name}
-              </p>
-              <p>{location.address}</p>
+              </span>
+              <span>{location.address}</span>
               {location.city && (
-                <p>
+                <span>
                   {location.city}, {location.state} {location.zip}
-                </p>
+                </span>
               )}
-              {location.phone && <p>📞 {location.phone}</p>}
+              {location.phone && <span>📞 {location.phone}</span>}
             </div>
           );
         })}

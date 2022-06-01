@@ -16,5 +16,10 @@
     @media (max-width: 500px) {
       flex-direction: column;
     }
+
+    .footer-location {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
