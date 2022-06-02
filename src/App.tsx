@@ -8,15 +8,13 @@ import Hero from "./sections/Hero/Hero";
 function App() {
   const Intro = () => (
     <div className="intro-container">
+      [here will be a photo]
       <p className="lora subtitle">
         At FMO we pamper hardworking men with our fine grooming services.
       </p>
       <p style={{ fontSize: "20px" }}>
         Our goal is for all Gentlemen to WALK IN AS A MAN, WALK OUT AS A KING!
       </p>
-      {/* <p style={{ fontStyle: "italic" }}>
-        *Membership model & louge location lauching Fall ‘22
-      </p> */}
     </div>
   );
 
