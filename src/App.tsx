@@ -9,12 +9,10 @@ function App() {
   const Intro = () => (
     <div className="intro-container">
       <p className="lora subtitle">
-        We see that you work hard, King <br /> & you deserve to be rewarded.
+        At FMO we pamper hardworking men with our fine grooming services.
       </p>
       <p style={{ fontSize: "20px" }}>
-        At FMO we pamper hardworking men with our fine grooming services. <br />
-        <br />
-        Our goal is for all Men to WALK IN AS A MAN, WALK OUT AS A KING!
+        Our goal is for all Gentlemen to WALK IN AS A MAN, WALK OUT AS A KING!
       </p>
       {/* <p style={{ fontStyle: "italic" }}>
         *Membership model & louge location lauching Fall ‘22

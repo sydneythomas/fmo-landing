@@ -132,7 +132,7 @@ button {
 
   &:hover {
     box-shadow: unset;
-    color: $color-blue;
+    color: #000;
   }
 
   &.solid {
@@ -162,7 +162,7 @@ button {
     }
 
     &.blue:not(:hover) {
-      box-shadow: 2px 1000px 1px #1a1b42 inset;
+      box-shadow: 2px 1000px 1px #000 inset;
     }
   }
 }
