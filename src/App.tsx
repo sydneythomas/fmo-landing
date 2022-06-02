@@ -8,7 +8,7 @@ import Hero from "./sections/Hero/Hero";
 function App() {
   const Intro = () => (
     <div className="intro-container">
-      [here will be a photo]
+      [here will be a photo of men drinking]
       <p className="lora subtitle">
         At FMO we pamper hardworking men with our fine grooming services.
       </p>
