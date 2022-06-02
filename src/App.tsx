@@ -13,9 +13,17 @@ function App() {
       <p className="lora subtitle">
         At FMO we pamper hardworking men with our fine grooming services.
       </p>
-      <p style={{ fontSize: "20px" }}>
-        Our goal is for all Gentlemen to WALK IN AS A MAN, WALK OUT AS A KING!
-      </p>
+      <div
+        className="subtext"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          margin: "2rem auto",
+        }}
+      >
+        <span>Our goal is for all Gentlemen to</span>
+        <span> WALK IN AS A MAN, WALK OUT AS A KING!</span>
+      </div>
     </div>
   );
 

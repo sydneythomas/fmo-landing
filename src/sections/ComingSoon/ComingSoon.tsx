@@ -12,13 +12,13 @@ export default function ComingSoon() {
           This Fall we will open the doors to our members-only cigar lounge and
           bar.
         </p>
-        <button
+        {/* <button
           className="header solid"
           onClick={() => alert("go to sign up form")}
           style={{ margin: "1rem auto" }}
         >
           sign up here
-        </button>
+        </button> */}
       </div>
       <div className="coming-image-container">
         <img src={Lounge2} />
