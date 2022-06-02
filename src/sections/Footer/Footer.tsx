@@ -54,28 +54,34 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-locations">
+        <span>
+          <strong>Contact Us</strong>
+        </span>
         {locations.map((location, index) => {
           return (
             <div key={index} className="footer-location">
-              <span>
-                {location.isNew && <span>COMING FALL '22: </span>}{" "}
-                {location.name}
-              </span>
-              <span>{location.address}</span>
-              {location.city && (
-                <span>
-                  {location.city}, {location.state} {location.zip}
-                </span>
-              )}
               {location.phone && (
-                <span>
+                <p>
                   <FontAwesomeIcon
                     icon={phoneIcon}
                     style={{ marginRight: "0.5rem" }}
                   />
                   {location.phone}
-                </span>
+                </p>
               )}
+
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                {location.isNew && <span>COMING FALL '22: </span>}
+                <span>{location.name}</span>
+                {location.isNew && <span>TBA</span>}
+
+                <span>{location.address}</span>
+                {location.city && (
+                  <span>
+                    {location.city}, {location.state} {location.zip}
+                  </span>
+                )}
+              </div>
             </div>
           );
         })}

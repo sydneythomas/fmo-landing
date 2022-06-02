@@ -4,6 +4,7 @@ import "./styles/_main.scss";
 import Features from "./sections/Features/Features";
 import Footer from "./sections/Footer/Footer";
 import Hero from "./sections/Hero/Hero";
+import ComingSoon from "./sections/ComingSoon/ComingSoon";
 
 function App() {
   const Intro = () => (
@@ -37,6 +38,7 @@ function App() {
       <div className="content-container">
         <Intro />
         <Features />
+        <ComingSoon />
         <Cta />
       </div>
       <Footer />
