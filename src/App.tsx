@@ -5,11 +5,15 @@ import Features from "./sections/Features/Features";
 import Footer from "./sections/Footer/Footer";
 import Hero from "./sections/Hero/Hero";
 import ComingSoon from "./sections/ComingSoon/ComingSoon";
+import Group from "./assets/group.png";
+import Cheers from "./assets/cheers.png";
 
 function App() {
   const Intro = () => (
     <div className="intro-container">
-      [here will be a photo of men drinking]
+      {/* <div style={{ margin: "-3rem -1rem 0" }}>
+        <img src={Cheers} />
+      </div> */}
       <p className="lora subtitle">
         At FMO we pamper hardworking men with our fine grooming services.
       </p>

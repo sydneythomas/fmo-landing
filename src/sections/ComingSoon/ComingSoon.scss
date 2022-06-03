@@ -1,3 +1,5 @@
+@import "../../styles/main.scss";
+
 .coming-container {
   background: #000;
   display: grid;
@@ -5,12 +7,12 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   color: white;
-  margin: 0 -3rem;
+  margin: $main-margin-neg-x;
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin: 0 -1rem;
+    margin: $mobile-margin-neg-x;
   }
 }
 

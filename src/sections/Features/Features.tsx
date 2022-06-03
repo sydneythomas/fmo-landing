@@ -1,5 +1,8 @@
 import "./Features.scss";
-import Barber from "../../assets/close-up-of-barber-cutting-hair-with-clippers.jpeg";
+import BarberBlack from "../../assets/close-up-of-barber-cutting-hair-with-clippers.jpeg";
+import BarberWhite from "../../assets/barber white.jpg";
+import BarberStraight from "../../assets/barber straight.jpg";
+import BarberStraight2 from "../../assets/barber straight2.jpg";
 import Nails from "../../assets/nails.jpeg";
 import Skin from "../../assets/face-roller.jpeg";
 import Lounge from "../../assets/lounge.jpeg";
@@ -9,25 +12,23 @@ import Towel from "../../assets/hottowel.jpeg";
 import Lounge2 from "../../assets/cigar lounge.jpeg";
 import Feet from "../../assets/feet.jpeg";
 import ManAtBar from "../../assets/man_at_bar.jpeg";
+import ManAtBarZoom from "../../assets/man_at_bar_zoom.jpeg";
 
 export default function Features() {
-  const photos = [Barber, Feet, Towel, ManAtBar];
+  const photos = [BarberStraight, Feet, Towel, ManAtBarZoom];
 
   const features = [
     {
       title: "Barber & Facials",
       text: "Allow our professionally trained barbers to trim & sculpt your mane to perfection. We offer razor shaves, shaping, and a variety of other techniques for all hair types.",
-      img: Barber,
     },
     {
       title: "Nail Grooming",
       text: "You're on your feet all day, King. Let us help you relax & unwind with our premium manicure & pedicure treatments. ",
-      img: Feet,
     },
     {
       title: "The Bar",
       text: "Every gentleman will receive a complimentary beverage with each grooming service. We offer a selection of premium, expertly-crafted cocktails.",
-      img: ManAtBar,
     },
     // {
     //   title: "Soothing Facials",

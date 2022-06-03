@@ -1,4 +1,4 @@
-@import "../../styles/main";
+@import "../../styles/main.scss";
 
 .photo-grid {
   margin: 5rem auto;
@@ -11,7 +11,7 @@
     "div3 div4 div0 div0 ";
 
   @media (max-width: 800px) {
-    margin: 0 -1rem;
+    margin: $mobile-margin-neg-x;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
