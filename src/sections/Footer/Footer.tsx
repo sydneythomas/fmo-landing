@@ -33,7 +33,6 @@ export default function Footer() {
       city: "Sandy Springs",
       state: "GA",
       zip: "30328",
-      phone: "555 - 555 - 5555",
     },
     {
       name: "FMO & The Den",
@@ -54,22 +53,50 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-locations">
-        <span>
-          <strong>Contact Us</strong>
+        <div className="contact-container">
+          <span
+            style={{
+              margin: "1rem auto .5rem",
+              fontWeight: "500",
+              fontSize: "25px",
+            }}
+          >
+            Contact Us
+          </span>
+          <span>
+            <FontAwesomeIcon
+              icon={phoneIcon}
+              style={{ marginRight: "0.5rem" }}
+            />
+            {"555 - 555 - 5555"}
+          </span>
+
+          <a
+            href="mailto:sales@fmogrooming.com"
+            style={{ margin: ".5rem auto" }}
+          >
+            <span>
+              <FontAwesomeIcon
+                icon={emailIcon}
+                style={{ marginRight: "0.5rem" }}
+              />
+              {"sales@fmogrooming.com"}
+            </span>
+          </a>
+        </div>
+
+        <span
+          style={{
+            margin: "1rem auto 0",
+            fontWeight: "500",
+            fontSize: "25px",
+          }}
+        >
+          Locations
         </span>
         {locations.map((location, index) => {
           return (
             <div key={index} className="footer-location">
-              {location.phone && (
-                <p>
-                  <FontAwesomeIcon
-                    icon={phoneIcon}
-                    style={{ marginRight: "0.5rem" }}
-                  />
-                  {location.phone}
-                </p>
-              )}
-
               <div style={{ display: "flex", flexDirection: "column" }}>
                 {location.isNew && <span>COMING FALL '22: </span>}
                 <span>{location.name}</span>
@@ -88,11 +115,6 @@ export default function Footer() {
       </div>
 
       <div className="footer-socials">
-        {socials.email && (
-          <a href={socials.email}>
-            <FontAwesomeIcon className="footer-social" icon={emailIcon} />
-          </a>
-        )}
         {socials.facebook && (
           <a href={socials.facebook} target="_blank">
             <FontAwesomeIcon className="footer-social" icon={facebookIcon} />

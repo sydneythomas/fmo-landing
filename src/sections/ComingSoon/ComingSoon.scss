@@ -12,14 +12,24 @@
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+
+  @media (max-width: 500px) {
     margin: $mobile-margin-neg-x;
   }
 }
 
 .coming-text-container {
-  padding: 2rem;
+  padding: 5rem 2rem;
   background: url(../../assets/bg_swirl.jpeg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    padding: 2rem;
+  }
 }
 
 .coming-image-container {

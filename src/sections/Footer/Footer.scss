@@ -10,11 +10,21 @@
   align-items: center;
   padding: 2rem;
 
+  a {
+    color: unset;
+  }
+
   .footer-locations {
     display: flex;
     flex: 1;
     justify-content: space-between;
     flex-direction: column;
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 
     .footer-location {
       display: flex;
@@ -26,10 +36,6 @@
   .footer-socials {
     display: flex;
     margin: 1rem auto;
-
-    a {
-      color: unset;
-    }
 
     .footer-social {
       margin: 0 0.5rem;

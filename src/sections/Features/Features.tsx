@@ -20,36 +20,16 @@ export default function Features() {
   const features = [
     {
       title: "Barber & Facials",
-      text: "Allow our professionally trained barbers to trim & sculpt your mane to perfection. We offer razor shaves, shaping, and a variety of other techniques for all hair types.",
+      text: "Allow our professionally trained barbers to trim & sculpt your mane to perfection. We offer razor shaves, scissor cuts, hot towels, facials, & a variety of other techniques for all hair types.",
     },
     {
       title: "Nail Grooming",
-      text: "You're on your feet all day, King. Let us help you relax & unwind with our premium manicure & pedicure treatments. ",
+      text: "You're on your feet all day, King. Let us help you relax & unwind with our classic & signature manicure & pedicure treatments. ",
     },
     {
       title: "The Bar",
-      text: "Every gentleman will receive a complimentary beverage with each grooming service. We offer a selection of premium, expertly-crafted cocktails.",
+      text: "Every gentleman will receive a complimentary beverage with each service.",
     },
-    // {
-    //   title: "Soothing Facials",
-    //   text: "Pamper your skin with a luxurious hot towel facial. Lay back, relax, & allow the steam to rejuvenate your pores.",
-    //   img: Towel,
-    // },
-    // {
-    //   title: "The Den",
-    //   text: "Coming soon to our north Atlanta location, The Den is a perfect place to network or wind down while enjoying one of our topshelf cocktails, cigars, & live music.",
-    //   img: Lounge2,
-    // },
-    // {
-    //   title: "Fine Cigars",
-    //   text: "Browse our selection of cigars or enjoy one of your own in our private lounge.",
-    //   img: Cigar,
-    // },
-    // {
-    //   title: "Bespoke Cocktails",
-    //   text: "Every gentleman will receive a complimentary beverage with each grooming service. We offer a selection of premium, expertly-crafted cocktails.",
-    //   img: Drink,
-    // },
   ];
 
   return (
@@ -61,7 +41,7 @@ export default function Features() {
 
         {photos.map((photo, index) => {
           return (
-            <div className={`div${index + 1}`}>
+            <div className={`div${index + 1}`} key={index}>
               <img src={photo} />
             </div>
           );
@@ -70,7 +50,8 @@ export default function Features() {
 
       <div className="feature-grid">
         {features.map((feature, index) => {
-          const firstPart = feature.title.split(" ").slice(0, -1).join() + " ";
+          const firstPart =
+            feature.title.split(" ").slice(0, -1).join(" ") + " ";
           const lastWord = feature.title.split(" ").pop();
           return (
             <div className="feature-card" key={index}>

@@ -174,3 +174,11 @@ button {
     margin: $mobile-margin;
   }
 }
+
+.intro-image {
+  margin: $main-margin-neg;
+
+  @media (max-width: 500px) {
+    margin: $mobile-margin-neg;
+  }
+}

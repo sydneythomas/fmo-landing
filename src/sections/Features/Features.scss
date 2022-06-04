@@ -10,7 +10,7 @@
     "div1 div2 div0 div0 "
     "div3 div4 div0 div0 ";
 
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     margin: $mobile-margin-neg-x;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
