@@ -35,7 +35,7 @@ export default function Footer() {
       zip: "30328",
     },
     {
-      name: "FMO & The Den",
+      name: "FMO & THE DEN",
       isNew: true,
     },
   ];
@@ -98,7 +98,7 @@ export default function Footer() {
           return (
             <div key={index} className="footer-location">
               <div style={{ display: "flex", flexDirection: "column" }}>
-                {location.isNew && <span>COMING FALL '22: </span>}
+                {location.isNew && <span>COMING FALL 2022: </span>}
                 <span>{location.name}</span>
                 {location.isNew && <span>TBA</span>}
 

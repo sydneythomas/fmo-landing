@@ -20,11 +20,11 @@ export default function Features() {
   const features = [
     {
       title: "Barber & Facials",
-      text: "Allow our professionally trained barbers to trim & sculpt your mane to perfection. We offer razor shaves, scissor cuts, hot towels, facials, & a variety of other techniques for all hair types.",
+      text: "Allow our professionally licensed barbers to trim & sculpt your mane to perfection. We offer razor shaves, scissor cuts, hot towels, facials, & a variety of other techniques for all hair types.",
     },
     {
       title: "Nail Grooming",
-      text: "You're on your feet all day, King. Let us help you relax & unwind with our classic & signature manicure & pedicure treatments. ",
+      text: "King, because you're on your feet all day, let us help you relax & unwind with our classic & signature manicure & pedicure treatments. ",
     },
     {
       title: "The Bar",
