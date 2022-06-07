@@ -68,7 +68,7 @@ export default function Footer() {
               icon={phoneIcon}
               style={{ marginRight: "0.5rem" }}
             />
-            {"555 - 555 - 5555"}
+            {"(404) 643-2345"}
           </span>
 
           <a
