@@ -28,7 +28,7 @@ export default function Features() {
     },
     {
       title: "The Bar",
-      text: "Every gentleman will receive a complimentary beverage with each service.",
+      text: "Every gentleman will receive a complimentary beverage with service.",
     },
   ];
 
